@@ -1,0 +1,77 @@
+body{
+}
+.about-card {
+    min-height: 100vh;
+    padding: 3rem;
+    background: linear-gradient(360deg, #070707 30% , #d4d3de); 
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    
+}
+.about-container {
+    backdrop-filter: blur(1000px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    width: 77%;
+    height: 550px;
+    padding: 3rem;
+    color: transparent;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    margin-top: 2rem;
+    overflow-y: scroll;
+}
+.about-text-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem; 
+    flex: 1;
+
+}
+.about-txt, 
+.about-skills {
+    min-width: 0; 
+}
+
+.about-skills {
+    width: 100%; 
+    overflow: hidden; 
+    position: relative;
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+
+}
+
+.skills-txt {
+    display: flex;
+    width: max-content;
+    gap: 1.2rem;
+    animation: scroll 8s linear infinite alternate;
+}
+
+.skill-card {
+    flex-shrink: 0;
+    height: 120px;
+    width: 120px;
+}
+.skill-card>img{
+    height: 80px;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width:488px){
+    .about-container{
+        padding: 16px;
+    }
+    .about-card{
+        padding: 1rem;
+    }
+}

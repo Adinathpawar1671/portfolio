@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One&family=DM+Serif+Display:ital@0;1&family=Jersey+10+Charted&family=Jersey+15+Charted&family=Luckiest+Guy&family=Rubik+Mono+One&family=Sekuya&family=Titan+One&display=swap');
+
+body{
+    padding: 0;
+    margin : 0;
+    font-family: "DM Serif Display", serif;
+    font-style: italic;
+
+}
+.index{
+    width: 100%;
+    height: 100vh; 
+    position: sticky;
+    top: -1px;
+    z-index: 1;
+    /* background-color: #1A1A1B; */
+    background: linear-gradient(360deg, #070707 , #d4d3de);  
+
+}
+
+/* Index page container */
+.container {
+    width: 100%;
+    height: 100vh; 
+    /* background: rgba(0, 0, 0, 0.6); */
+}
+.name-container{
+    display: flex;
+    flex-direction: row;
+    padding-top: 10rem;
+    justify-content: center;
+    color: white;
+    animation: slideUp 1s linear ;
+    margin-bottom: 1rem;
+}
+.name-word{
+    font-size: 9vw;
+    margin-right:0.5px;
+    cursor: default;
+    user-select: none;
+
+}
+
+.animate-bounce{
+    animation: wordAnimation 0.5s ease-in-out forwards;
+}
+.skill{
+    font-size : 4vw;
+    font-weight:900 ;
+}
+
+.work-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    justify-content: center; 
+    animation: floatEffect 4s ease-in-out infinite;
+    color: white;
+
+}
+
+
+.web {
+    transform: translateX(-100vw); 
+    animation: slideIn 1.5s ease-out forwards;
+    animation-delay: 0.5s; 
+}
+
+.dev {
+    transform: translateX(100vw); 
+    animation: slideIn 1.5s ease-out forwards;
+    animation-delay: 1s;
+}
+
+.about{
+    position: sticky;
+    width: 100%;
+    min-height: 100vh;
+    top : -1px;
+    z-index: 2; 
+    background-color: rgb(237, 233,212);
+}
+
+#projects{
+    position: sticky;
+    width: 100%;
+    min-height: 100vh;
+    /* top : -1px; */
+    z-index: 3;
+    background-size: 400%;
+    animation: bg-animation 6s  infinite alternate;
+    overflow-y: auto;
+}
+.contact{
+    position: sticky;
+    width: 100%;
+    min-height: 100vh;
+    top : -1px;
+    z-index: 4;
+    background: linear-gradient(360deg, #070707 , #d4d3de);  
+    color: white;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+.imp-links{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:2rem;
+}
+.link-indx{
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.208);
+    padding: 7px;
+    border-radius: 17px;
+    width: auto;
+    color:rgba(255, 255, 255, 0.335)
+}
+.link-indx:hover{
+    color:white;
+}
+.white{
+    text-decoration: none;
+    padding: 7px;
+    border-radius: 17px;
+    width: auto;
+    background-color: white;
+    color: black;
+}
+@keyframes slideUp {
+    0% {
+        transform: translateY(100%); 
+        opacity: 0;                 
+    }
+    100% {
+        transform: translateY(0);   
+        opacity: 1;
+    }
+}
+
+@keyframes floatEffect {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-20px); }
+    100% { transform: translateY(0); } 
+}
+
+@keyframes slideIn {
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes wordAnimation {
+    40%{
+        transform: scale(0.5) ;
+    }
+    60%{
+        transform: scale(2);
+    }
+    100%{
+        transform: scale(1);
+    }
+
+}
+
+@keyframes bg-animation {
+    0%{
+        background-position: left;
+    }
+    100%{
+        background-position: right;
+    }
+    
+}
+
+/* index page main video configuring */
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1; 
+}
