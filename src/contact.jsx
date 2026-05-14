@@ -2,7 +2,7 @@ import "./contact.css";
 import TextField from '@mui/material/TextField';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import EmailIcon from '@mui/icons-material/Email';
+import LocalPhoneIcon from '@mui/icons-material/LocalPhone';;
 import Button from '@mui/material/Button';
 import DeveloperModeIcon from '@mui/icons-material/DeveloperMode';
 
@@ -83,19 +83,19 @@ const formik = useFormik({
                     <p> I’m currently looking for new opportunities to drop my Master’s-level theory and 'build-anything' energy into a real-world team. If you’re looking for a developer who’s as fascinated by the 'why' as the 'how,' let’s grab a virtual coffee and see what we can create.
                     </p>
                     <div className="contact-links">
-                        <a href="" className="contact-link" > 
+                        <a href="https://github.com/Adinathpawar1671" className="contact-link" > 
                             <span><GitHubIcon sx={{ fontSize: 30 }}></GitHubIcon></span>&nbsp;
                             <p>Github</p>
                         </a>
-                        <a href="" className="contact-link">
+                        <a href="https://www.linkedin.com/in/adinathpawar?" className="contact-link">
                             <span><LinkedInIcon sx={{ fontSize: 30 }}></LinkedInIcon></span>&nbsp;
                             <p>Linkedin</p>
                         </a>
-                        <a href=""className="contact-link">
-                            <span><EmailIcon sx={{ fontSize: 30 }} ></EmailIcon></span>&nbsp;
-                            <p>Email</p>
+                        <a href="tel:+919699984367"className="contact-link">
+                            <span><LocalPhoneIcon sx={{ fontSize: 30 }} ></LocalPhoneIcon></span>&nbsp;
+                            <p>9699984367</p>
                         </a>
-                         <a href=""className="contact-link">
+                         <a href="https://leetcode.com/u/2kobUVKinF/"className="contact-link">
                             <span><DeveloperModeIcon></DeveloperModeIcon></span>&nbsp;<p>Leetcode</p>
                         </a>
                     </div>
@@ -175,7 +175,7 @@ const formik = useFormik({
                         </div>
 
                        <Button variant="outlined" size="large" 
-                       sx={{color:"white",opacity:"0.8",border:"none", borderRadius:"20px", backgroundColor:" rgba(154, 150, 150, 0.24)", marginBottom:"2rem"}}
+                       sx={{color:"white",opacity:"0.8",border:"none", borderRadius:"20px", backgroundColor:" rgba(154, 150, 150, 0.24)", marginBottom:"2rem", fontFamily: "DM Serif Display, serif",fontStyle: "italic"}}
                        type="submit" >
                         Send
                        </Button>

@@ -32,6 +32,9 @@
 .last{
     margin-bottom: 1rem;
 }
+.contact-link>p{
+    margin: 0;
+}
 @media (max-width:884px){
     .contact-container{
         flex-direction: column;

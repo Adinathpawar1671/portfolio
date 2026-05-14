@@ -27,14 +27,15 @@ app.post('/api/contact', (req, res)=>{
         from: process.env.GMAIL,
         to: process.env.GMAIL,
         subject: subject,
-        text: `From: ${name} (${email})\n\n${message}`
+        text: `From: ${name} (${email})\n\nwork : ${subject}\nMessage:${message}`
     };
 
     transpoter.sendMail(mailOption,function(err, info){
     if(err){
-        console.log(err);
+        // console.log(err);
+
     }else{
-        console.log(info.response);
+        // console.log(info.response);
     }
 });
 

@@ -77,7 +77,7 @@ export default function NewSkillCard(){
                     </div>
                         {project[currProject].link !==""?(
                             <>
-                                <a className="project-link">
+                                <a className="project-link" href={project[currProject].link}>
                                     Checkout Live <CallMadeIcon />
                                 </a>
                                 <a className="project-link">

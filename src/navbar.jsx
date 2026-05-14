@@ -9,8 +9,7 @@ export default function Navbar() {
                 <a href="#" className="navbar-links link-cont">Home</a>
                 <a href="#projects" className="navbar-links link-cont">Work</a>
                 <a href="#contact" className="navbar-links link-cont">Contact</a>
-                <a href={myResume} target="_blank" rel="noreferrer" className="navbar-links link-cont">Resume
-                </a>
+                <a href={myResume} target="_blank" rel="noreferrer" className="navbar-links link-cont">Resume</a>
             </div>
         </div>
     );
