@@ -11,8 +11,9 @@ import {useFormik} from 'formik';
 
 export default function Contact() {
 
+    const BACKEND_URL = import.meta.env.VITE_API_URL;
     const validate = values => {
-   const errors = {};
+    const errors = {};
   
    if (!values.message) {
      errors.message = 'Required';
@@ -39,7 +40,7 @@ const formik = useFormik({
     validate,
     onSubmit : async (values) => {
         try {
-            const response = await fetch("http://localhost:8080/api/contact", {
+            const response = await fetch(`${BACKEND_URL}/api/contact`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
