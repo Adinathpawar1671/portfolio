@@ -1,5 +1,5 @@
 .navbar-container {
-    position: fixed; 
+    position: fixed;
     top: 15px;
     height: 50px;
     width: 100vw;
@@ -33,6 +33,7 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 400px;
+    gap:1rem;
+    /* width: 400px; */
     height: 100%;
 }
