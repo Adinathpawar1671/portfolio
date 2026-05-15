@@ -11,7 +11,7 @@ import {useFormik} from 'formik';
 
 export default function Contact() {
 
-    const BACKEND_URL = import.meta.env.VITE_API_URL;
+    const BACKEND_URL = import.meta.env.VITE_API_URL || "https://portfolio-backend-h7qv.onrender.com";
     const validate = values => {
     const errors = {};
   
