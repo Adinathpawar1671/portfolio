@@ -42,7 +42,7 @@ export default function WebDeveloper(){
                     </h1>
 
                     <div className="work-container">
-                        <div className="web skill">A WEB-</div>
+                        <div className="web skill">A MERN STACK-</div>
                         <div className="dev skill">DEVELOPER</div>
                     </div>
                     <p style={{color:"white", opacity:"0.5", textAlign:"center", }}><i>Designing seamless digital interactions by focusing on the<br></br> unique nuances which bring systems to life.</i></p>

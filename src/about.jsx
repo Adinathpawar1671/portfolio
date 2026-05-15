@@ -9,12 +9,23 @@ export default function AboutMe() {
                     <div className="about-text-container">
                         <div className='about-txt'>
                             <p style={{ color: 'white', }}>
-                                <span style={{ display: "inline-block", margin: "0", fontSize:"2rem" }}>H</span>
-                                <span style={{ display: "inline-block", margin: "0", fontSize:"2rem" }}>i &nbsp;</span> 
-                                I recently wrapped up my Bachelor’s and survived the first year of my Master’s in CS. While the academics are great, my real obsession is building things that live on the web. I’ve spent my time lately diving deep into the MERN stack, specifically through projects like a full-scale Airbnb clone, a weather app that actually looks good, and the portfolio you’re clicking through right now. Whether I’m wrestling with logic in Java, C++, or Python, or getting a layout just right with Tailwind, I’m happiest when I’m turning a blank VS Code window into a functional, scalable piece of software.
+                                I focus on building reliable systems and adapting to the right tech stack for the problem at hand. Recently, I designed and built a full-stack property rental platform from scratch using JavaScript, React, MongoDB, HTML, and CSS.
                                 <br></br>
+                                <ul>
+                                    Core Technologies:
+                                    <li>Languages: Java, C++, C#, Python, JavaScript
+                                    </li>
+                                    <li>Tools:Git, GitHub, VS Code, Jupyter Notebook, Hoppscotch, IntelliJ 
+                                    </li>
+                                    <li>Databases: MongoDB and MySQL</li>
+                                    <li>Coursework: Data Structures and Algorithms, Object-Oriented Programming,Database Management Systems, Web Development, AAC</li>
+                                    <li>Libraries/Frameworks: React,Bootstrap, Material UI, Express.js</li>
+
+                                </ul>
                                 <br></br>
-                                Beyond the code, I’ve got a soft spot for the "why" behind the "how." I recently did a Design Thinking workshop with RT-MSSU Mumbai, which changed the way I look at development—it's not just about making the code work; it’s about making it make sense for the person on the other side of the screen. Right now, I’m hunting for a MERN Stack or Software Dev role where I can drop my mix of academic theory and "build-everything" energy into some epic projects. Technology is everywhere you look, and I just want to be one of the people behind the curtain making it all move.
+                                Through academic team projects, I regularly collaborate to ship web applications, focusing on scalable architecture and security fundamentals.
+                                <br></br>
+                                I am currently looking for an internship where I can contribute to real-world, user-facing applications and write    production-level code.
                             </p>
                         </div>
                     </div>

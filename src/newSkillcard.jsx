@@ -13,25 +13,27 @@ export default function NewSkillCard(){
 
     const [project, setProject] = useState([{
         title : "Air-BnB",
-        description : "This Airbnb-inspired full-stack application is a robust demonstration of the MVC (Model-View-Controller) architecture, engineered with a Node.js and Express backend and a MongoDB database managed through Mongoose schemas. I implemented secure, session-based authentication and granular authorization using Passport.js, ensuring data integrity through strict server-side validation with Joi. The platform features seamless cloud-based media management via Cloudinary API for image hosting and integrates Mapbox SDK for geospatial data rendering. Styled with a blend of Bootstrap and Tailwind CSS and deployed on Render, the project highlights my ability to build complex, scalable RESTful APIs that bridge the gap between heavy backend logic and intuitive, responsive user experiences.",
+        description : ["Integrated Mapbox & Cloudinary APIs to automate geospatial geocoding and implement a dynamic image transformation pipeline, reducing frontend payload by 40%", "Architected RESTful Data Relations using Mongoose population and atomic $pull operators, ensuring 100% referential integrity across Listings, Reviews, and Users", "Engineered a Secure MVC Framework with Node.js and Passport.js, featuring server-side Joi validation and session-based authentication for scalable user management"],
         image : Project1,
         link : "https://air-bnb-project-l2dy.onrender.com/",
         color : [ "rgb(234, 166, 166)", "#a23a43","rgb(92, 15, 15)"],
-        skills :["Express", "nodejs", "javascript","ejs", "mongoDB", "Bootstrap", "html", "CSS"]
+        skills :["Express", "nodejs", "javascript","ejs", "mongoDB", "Bootstrap", "html", "CSS","Geocoding"]
     },{
         title : "Weather App",
-        description : "This React-based Weather Application leverages the OpenWeatherMap API to deliver real-time meteorological data through a sleek, component-driven interface. Built using Functional Components and React Hooks, the app utilizes useState for dynamic data management and useEffect to handle asynchronous API calls and side effects. I implemented robust features such as city-based search functionality, unit conversion logic, and conditional rendering to display weather-specific icons and background states based on live conditions. By focusing on asynchronous JavaScript (Async/Await) and clean state transitions, the project demonstrates my ability to integrate third-party services and manage complex data flows within a highly responsive, mobile-first frontend environment.",
+        description :[ "This React-based Weather Application leverages the OpenWeatherMap API to deliver real-time meteorological data through a sleek, component-driven interface.", "Built using Functional Components and React Hooks, the app utilizes useState for dynamic data management and useEffect to handle asynchronous API calls and side effects.", "I implemented robust features such as city-based search functionality, unit conversion logic, and conditional rendering to display weather-specific icons and background states based on live conditions. By focusing on asynchronous JavaScript (Async/Await) and clean state transitions, the project demonstrates my ability to integrate third-party services and manage complex data flows within a highly responsive, mobile-first frontend environment."],
         image : Project2,
         link : "",
         color : ["rgb(155, 165, 128)", "rgb(136,71,28)", "rgb(131,121,73)"],
-        skills :["Express", "nodejs", "javascript","React", "MaterialUI", "html", "CSS"]
+        skills :["javascript","React", "MaterialUI", "html", "CSS"]
      },
      {
         title : "Portfolio",
-        description : "This developer portfolio is a high-performance React application designed with a cinematic Glassmorphism UI, overlaying a dynamic, AI-generated background featuring a 'Sodium Decay' aesthetic. Technically, the site utilizes CSS backdrop-filters and translucent layering to create depth, while integrating a looping, high-field video with an 'Impossible Camera' moveset to provide an immersive user experience. The architecture is fully responsive and component-driven, ensuring that the heavy visual assets are optimized for fast load times without sacrificing the 'epic' industrial-tech vibe. By bridging the gap between advanced generative media and modern frontend development, this project serves as a live demonstration of my ability to build polished, production-ready interfaces that prioritize both aesthetic impact and technical stability.",
+        description : ["Architected a Responsive Portfolio using React and Material UI (MUI), leveraging custom sx theming and component-driven design to create a glassmorphic user interface.","Developed a Secure Contact Engine with Formik, implementing Regex-based validation for real-time error handling and ensuring 100% data integrity before server-side transmission.","Engineered a  Communication Pipeline via a Node.js/Nodemailer microservice, utilizing SMTP protocols and CORS middleware to facilitate secure, asynchronous message delivery."],
         image : Project3,
-        link : "",
-        skills :["Express", "nodejs", "javascript","React", "MaterialUI", "html", "CSS"]
+        link : "#",
+        color:[],
+        skills :["Express", "node.js","Nodemailer", "javascript","React", "MaterialUI", "html", "CSS"],
+        github:"https://github.com/Adinathpawar1671/portfolio"
     },
     ]);    
     
@@ -67,7 +69,11 @@ export default function NewSkillCard(){
                     
                     <h2 style={{fontSize: "8vw", margin:0}}>{project[currProject].title}</h2>
                     
-                    <p>{project[currProject].description}</p>
+                    <ul>
+                    {project[currProject].description.map((el, index) => {
+                        return <li key={index}>{el}</li>;
+                    })}
+                    </ul>
                      <div className="tech-stack">
                         {
                             project[currProject].skills.map((el, indx)=>{
@@ -80,7 +86,7 @@ export default function NewSkillCard(){
                                 <a className="project-link" href={project[currProject].link}>
                                     Checkout Live <CallMadeIcon />
                                 </a>
-                                <a className="project-link">
+                                <a className="project-link" href={project[currProject].github}>
                                     GitHub <CallMadeIcon />
                                 </a>
                             </>
@@ -94,7 +100,6 @@ export default function NewSkillCard(){
                                 </a>
                             </>
                         )}
-                    {/* </a> */}
                 </div>
                
             </div>

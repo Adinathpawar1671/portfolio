@@ -13,7 +13,6 @@ body{
     position: sticky;
     top: -1px;
     z-index: 1;
-    /* background-color: #1A1A1B; */
     background: linear-gradient(360deg, #070707 , #d4d3de);  
 
 }
@@ -22,7 +21,6 @@ body{
 .container {
     width: 100%;
     height: 100vh; 
-    /* background: rgba(0, 0, 0, 0.6); */
 }
 .name-container{
     display: flex;

@@ -46,7 +46,6 @@ const formik = useFormik({
                 },
                 body: JSON.stringify(values),
             });
-
             if (response.ok) {
                 alert("Message sent to the server!");
                 formik.resetForm();
