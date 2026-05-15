@@ -1,6 +1,6 @@
 {
   "scripts": {
-  "start": "node javascript/nodemailer.js"
+  "start": "node Javascript/nodemailer.js"
 },
   "name": "backend",
   "version": "1.0.0",
