@@ -1,4 +1,4 @@
-import "./webDev.css";
+import "../css/webDev.css";
 import { Typography } from '@mui/material';
 import AboutMe from "./about";
 import NewSkillCard from "./newSkillcard";

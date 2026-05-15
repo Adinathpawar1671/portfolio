@@ -1,4 +1,4 @@
-import "./contact.css";
+import "../css/contact.css";
 import TextField from '@mui/material/TextField';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -47,10 +47,10 @@ const formik = useFormik({
                 body: JSON.stringify(values),
             });
             if (response.ok) {
-                alert("Message sent to the server!");
+                alert("Message Sent successfully!");
                 formik.resetForm();
             } else {
-                alert("The server is awake, but something went wrong.");
+                alert("something went wrong.");
             }
         } catch (error) {
             console.error("Connection failed:", error);

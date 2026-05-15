@@ -1,6 +1,6 @@
-import "./navbar.css";
+import "../css/navbar.css";
 import { NavLink } from "react-router";
-import myResume from './assets/Adinath_Pawar_Resume.pdf'; 
+import myResume from '../assets/Adinath_Pawar_Resume.pdf'; 
 
 export default function Navbar() {
     return (

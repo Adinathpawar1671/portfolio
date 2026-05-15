@@ -1,11 +1,11 @@
-import "./newSkillcard.css";
+import "../css/newSkillcard.css";
 import { useState } from "react";
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import CallMadeIcon from '@mui/icons-material/CallMade';
-import Project1 from "./assets/project1.png"; 
-import Project2 from "./assets/project2.png"; 
-import Project3 from "./assets/project3.png"; 
+import Project1 from "../assets/project1.png"; 
+import Project2 from "../assets/project2.png"; 
+import Project3 from "../assets/project3.png"; 
 
 export default function NewSkillCard(){
 

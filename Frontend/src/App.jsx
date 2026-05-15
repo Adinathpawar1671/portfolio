@@ -1,7 +1,6 @@
 import { useState } from 'react'
 
-// import './App.css'
-import WebDeveloper from './webDev'
+import WebDeveloper from './views/webDev.jsx'
 function App() {
 
   return (
