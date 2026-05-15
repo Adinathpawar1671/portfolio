@@ -2,7 +2,7 @@
     position: fixed; 
     top: 15px;
     height: 50px;
-    width: 100%;
+    width: 100vw;
     z-index: 9999; 
     display: flex;
     justify-content: center; 
