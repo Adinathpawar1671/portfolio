@@ -30,8 +30,7 @@ export default function NewSkillCard(){
         title : "Portfolio",
         description : ["Architected a Responsive Portfolio using React and Material UI (MUI), leveraging custom sx theming and component-driven design to create a glassmorphic user interface.","Developed a Secure Contact Engine with Formik, implementing Regex-based validation for real-time error handling and ensuring 100% data integrity before server-side transmission.","Engineered a  Communication Pipeline via a Node.js/Nodemailer microservice, utilizing SMTP protocols and CORS middleware to facilitate secure, asynchronous message delivery."],
         image : Project3,
-        link : "#",
-        color:[],
+        link : "https://portfolio-psi-nine-6kpkngm17i.vercel.app/",
         skills :["Express", "node.js","Nodemailer", "javascript","React", "MaterialUI", "html", "CSS"],
         github:"https://github.com/Adinathpawar1671/portfolio"
     },
