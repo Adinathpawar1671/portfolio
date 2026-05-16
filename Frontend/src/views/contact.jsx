@@ -54,7 +54,7 @@ const formik = useFormik({
             }
         } catch (error) {
             console.error("Connection failed:", error);
-            alert("Is your Node server running on port 8080?");
+            alert("Currently there's an Issue, we'll be resolving it soon");
         }
     }
 
