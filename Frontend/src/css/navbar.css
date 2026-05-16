@@ -10,10 +10,11 @@
 }
 
 .align-items {
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
   align-items: center;
   gap: 4px;
+  flex-shrink: 1;
   padding: 6px 10px;
   border-radius: 50px;
   background: rgba(54, 53, 53, 0.35);
