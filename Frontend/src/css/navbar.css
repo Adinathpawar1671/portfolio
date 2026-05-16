@@ -1,8 +1,8 @@
 .navbar-container {
   position: fixed;
   top: 15px;
-  width: 500px;
-  z-index: 10;
+  width: 100%;
+  z-index: 9999;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -14,8 +14,6 @@
   flex-direction: row;
   align-items: center;
   gap: 4px;
-  flex-shrink: 1;
-  width: 400px;
   padding: 6px 10px;
   border-radius: 50px;
   background: rgba(54, 53, 53, 0.35);

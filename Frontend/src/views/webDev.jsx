@@ -18,10 +18,9 @@ export default function WebDeveloper(){
 
 
     return(
-        <>
-        <Navbar></Navbar>
+        <div style={{overflowX : "hidden"}}>
         <div className="index" >
-            
+            <Navbar></Navbar>
             {/* <div className="container" > */}
                     <h1 className="name-container" style={{margin:0}} >
                         
@@ -68,6 +67,6 @@ export default function WebDeveloper(){
             <Contact></Contact>
         </div>
         
-       </>
+       </div>
     )
 }
