@@ -12,3 +12,8 @@ dist-ssr/
 .idea/
 **/.DS_Store
 thumbs.db
+
+.env
+.env.local
+**/Backend/.env
+**/Frontend/.env
