@@ -19,8 +19,8 @@ export default function WebDeveloper(){
 
     return(
         <div style={{overflowX : "hidden"}}>
-        <div className="index" >
             <Navbar></Navbar>
+        <div className="index" >
             {/* <div className="container" > */}
                     <h1 className="name-container" style={{margin:0}} >
                         
