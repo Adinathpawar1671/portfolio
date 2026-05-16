@@ -10,7 +10,6 @@ import {useState} from 'react';
 import {useFormik} from 'formik';
 
 export default function Contact() {
-    // import.meta.env.VITE_API_URL || 
     const BACKEND_URL = "https://portfolio-backend-h7qv.onrender.com" ;
     const validate = values => {
     const errors = {};
