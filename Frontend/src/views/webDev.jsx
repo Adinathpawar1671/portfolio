@@ -22,7 +22,7 @@ export default function WebDeveloper(){
         <Navbar></Navbar>
         <div className="index" >
             
-            <div className="container" >
+            {/* <div className="container" > */}
                     <h1 className="name-container" style={{margin:0}} >
                         
                         <div className="name-word" onMouseEnter={handleMouseEnter}>A</div>
@@ -53,7 +53,7 @@ export default function WebDeveloper(){
                     <p style={{color:"white", opacity:"0.5",textAlign:"center", animation: "slideUp 1s linear", marginTop:"9rem"}}>
                         SCROLL DOWN
                     </p>
-            </div>
+            {/* </div> */}
         </div>
         
         <div className="about" id="about">
