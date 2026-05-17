@@ -57,10 +57,10 @@ export default function AboutMe() {
                                 <img src='https://cdn.simpleicons.org/tailwindcss' alt="taileindcss Logo" />
                             </div>
                             <div className="skill-card">
-                                <img src='https://cdn.simpleicons.org/express/black' alt="express Logo" />
+                                <img src='https://cdn.simpleicons.org/express/white' alt="express Logo" />
                             </div>
                             <div className="skill-card">
-                                <img src="https://cdn.simpleicons.org/github/black" alt="github Logo" />
+                                <img src="https://cdn.simpleicons.org/github/white" alt="github Logo" />
                             </div>
                             <div className="skill-card">
                                 <img src="https://cdn.simpleicons.org/mongodb" alt="mongodb Logo" />
